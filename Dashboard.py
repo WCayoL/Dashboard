@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 
-data_url = ("IDP SEPTIEMBRE PRUEBA.csv")
+data_url = ("https://github.com/WCayoL/Dashboard/blob/main/IDP%20SEPTIEMBRE%20PRUEBA.csv")
 
 st.title("Dashboard Retailatam 📈")
 st.markdown("")
