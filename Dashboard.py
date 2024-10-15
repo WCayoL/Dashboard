@@ -11,7 +11,7 @@ def load_data():
    data = pd.read_csv(data_url, delimiter=';')
    return data
 
-# Calcular las medidas necesarias
+"""# Calcular las medidas necesarias
 def calcular_kpi(data):
     total_by_planogramm = data[data['sku_status'] == 'by_planogramm'].shape[0]
     total_not_exposed = data[data['sku_status'] == 'not_exposed'].shape[0]
@@ -20,7 +20,7 @@ def calcular_kpi(data):
 
     # Calcular el KPI
     kpi_cumplimiento = total_by_planogramm / (total_by_planogramm + total_not_exposed + total_shelf_error + total_sku_position_error) * 100
-    return kpi_cumplimiento
+    return kpi_cumplimiento"""
 
 
 
@@ -29,6 +29,6 @@ data= load_data()
 #st.subheader('Raw Data')
 #st.write(data)
 
-kpi = calcular_kpi(data)
+"""kpi = calcular_kpi(data)
 # Mostrar el KPI
-st.metric(label='KPI de Cumplimiento', value=f'{kpi:.2f}%', delta='-')
+st.metric(label='KPI de Cumplimiento', value=f'{kpi:.2f}%', delta='-')"""
